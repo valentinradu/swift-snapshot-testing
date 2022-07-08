@@ -873,7 +873,7 @@ func snapshotView(
             if drawHierarchyInKeyWindow {
               view.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
             } else {
-              view.layer.render(in: ctx.cgContext)
+                view.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
             }
           }
         )
